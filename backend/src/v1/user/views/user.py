@@ -10,8 +10,8 @@ class UserView(APIView):
     Creates the user.
     """
 
-
-    def post(self, request):
+    @staticmethod
+    def post(request):
         serializer = UserSerializerCreate(data=request.data)
         if serializer.is_valid():
             user = serializer.save()
