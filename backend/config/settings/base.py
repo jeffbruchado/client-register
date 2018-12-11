@@ -16,7 +16,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
 
     # Requirements
     'corsheaders',
@@ -26,7 +25,7 @@ INSTALLED_APPS = [
 ]
 
 ALLOWED_HOSTS = ['*']
-# AUTH_USER_MODEL = 'user.Profile'
+AUTH_USER_MODEL = 'user.User'
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
