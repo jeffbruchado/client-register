@@ -28,7 +28,7 @@ class UsersTest(APITestCase):
             'username': 'foobar',
             'password': 'foobarpassword',
             'address': 'street address test - 119',
-            'cpf': '626.592.330-71',
+            'cpf': '62659233071',
             'phone_number': '48994618117'
         }
 
@@ -53,7 +53,7 @@ class UsersTest(APITestCase):
             'username': 'foobar',
             'password': 'foo',
             'address': 'street address test - 119',
-            'cpf': '626.592.330-70',
+            'cpf': '62659233070',
             'phone_number': '48994618116'
         }
 
@@ -66,7 +66,7 @@ class UsersTest(APITestCase):
             'username': 'foobar',
             'password': '',
             'address': 'street address test - 119',
-            'cpf': '626.592.330-69',
+            'cpf': '62659233069',
             'phone_number': '48994618115'
         }
 
@@ -80,7 +80,7 @@ class UsersTest(APITestCase):
             'username': 'foobar',
             'password': 'foobarpassword',
             'address': 'street address test - 119',
-            'cpf': '626.592.330-68',
+            'cpf': '62659233068',
             'phone_number': '48994618114'
         }
 
@@ -93,7 +93,7 @@ class UsersTest(APITestCase):
             'username': 'foobar',
             'password': 'foobarpassword',
             'address': 'street address test - 119',
-            'cpf': '626.592.330-71',
+            'cpf': '62659233071',
             'phone_number': '48994618110'
         }
 
@@ -106,41 +106,11 @@ class UsersTest(APITestCase):
             'username': 'foobar',
             'password': 'foobarpassword',
             'address': 'street address test - 119',
-            'cpf': '626.592.330-71',
+            'cpf': '62659233071',
             'phone_number': '48994618112'
         }
 
         self.response_field(data, 'name')
-
-
-    #
-    # def test_create_user_with_preexisting_email(self):
-    #     data = {
-    #         'username': 'testuser',
-    #         'email': 'test@example.com',
-    #         'password': 'testuser'
-    #     }
-    #
-    #     self.response_field(data, 'email')
-    #
-    # def test_create_user_with_invalid_email(self):
-    #     data = {
-    #         'username': 'testuser',
-    #         'email': 'testing',
-    #         'password': 'testuser'
-    #     }
-    #
-    #     self.response_field(data, 'email')
-    #
-    # def test_create_user_with_no_email(self):
-    #     data = {
-    #         'username': 'testuser',
-    #         'email': '',
-    #         'password': 'testuser'
-    #     }
-    #
-    #     self.response_field(data, 'email')
-    #
 
     def response_field(self, data, field):
         response = self.client.post(self.create_url, data, format='json')
