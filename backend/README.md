@@ -8,9 +8,13 @@ Backend is build using Python/Django REST Framework and the way development has 
 
 To configure this project, follow the steps below:
 
+### Installation
+
 First of all you will have to download the project, run the following command:
 
-`git clone https://github.com/Jack3Dz/client-register.git`
+```sh
+$ git clone https://github.com/Jack3Dz/client-register.git
+```
 
 You will now need to have Python 3 installed on your machine, if you do not have it yet, you can download it at the following link:
 
@@ -18,23 +22,31 @@ I recommend you use the version that is most used by all users - https://www.pyt
 
 Once you have Python installed, you will need to access the application directory:
 
-`\client-register\backend`
+```sh
+$ cd client-register\backend
+```
 
 After accessing the application directory, you will need to install the project dependencies by running the following command:
 
-`pip install -r requirements.txt`
+```sh
+$ pip install -r requirements.txt
+```
 
 After that you will need to perform the application migrations by running the following commands:
 
-`python manage.py makemigrations`
-`python manage.py migrate`
-
+```sh
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
 
 After that you'll be able to run the application:
 
-`python manage.py runserver`
+```sh
+$ python manage.py runserver
+```
 
 To run the tests run the following command:
 
-`python manage.py test`
-
+```sh
+$ python manage.py test
+```
