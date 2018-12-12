@@ -18,7 +18,7 @@ I recommend you use the version that is most used by all users - https://www.pyt
 
 Once you have Python installed, you will need to access the application directory:
 
-`\pip install\backend`
+`\client-register\backend`
 
 After accessing the application directory, you will need to install the project dependencies by running the following command:
 
